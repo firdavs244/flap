@@ -4,7 +4,7 @@
 ## 🚀 Laravel Docker Setup Guide
 
 Ushbu hujjat Laravel loyihasini Docker konteynerlarida ishga tushirish uchun bosqichma-bosqich qo‘llanmani taqdim etadi.
-
+```
 ---
 
 ### 📦 1. Docker konteynerlarini ishga tushiring
