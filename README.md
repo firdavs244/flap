@@ -1,14 +1,73 @@
-# 1. 
+Albatta! Quyidagicha `README.md` faylingiz uchun chiroyli, toza va tushunarli shaklda yozib beraman:  
+
+---
+
+```markdown
+## 🚀 Laravel Docker Setup Guide
+
+Ushbu hujjat Laravel loyihasini Docker konteynerlarida ishga tushirish uchun bosqichma-bosqich qo‘llanmani taqdim etadi.
+
+---
+
+### 📦 1. Docker konteynerlarini ishga tushiring
+
+```bash
 docker-compose up -d
+```
 
-# 2. 
+---
+
+### 📥 2. Composer orqali barcha kerakli kutubxonalarni o‘rnating
+
+```bash
 docker exec -it laravel_app composer install
+```
 
-# 3. 
+---
+
+### ⚙️ 3. Laravel konfiguratsiyalarini bajaring
+
+```bash
 docker exec -it laravel_app php artisan key:generate
-
-# 4.
 docker exec -it laravel_app php artisan migrate
+```
+
+---
+
+### 🔐 4. Fayl ruxsatlarini sozlang
+
+```bash
+docker exec -it laravel_app bash
+chmod -R 777 storage
+chmod -R 777 bootstrap/cache
+```
+
+---
+
+### 🧠 5. Cache fayllarni yaratish
+
+```bash
+php artisan config:cache
+php artisan route:cache
+exit
+```
+
+---
+
+### 🔁 6. Katta o‘zgarishlardan so‘ng konteynerlarni qayta ishga tushiring
+
+```bash
+docker-compose restart
+```
+
+---
+
+✅ Endi sizning Laravel loyihangiz Docker orqali ishga tushdi va ishlashga tayyor!
+```
+
+---
+
+Agar `laravel_app` konteyner nomi boshqa bo‘lsa (masalan `app` yoki `web`), uni ham o‘zgartirib berishim mumkin. Yana yordam kerakmi?
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
