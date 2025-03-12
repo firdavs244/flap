@@ -18,7 +18,7 @@ docker exec -it laravel_app composer install
 
 ```bash
 docker exec -it laravel_app php artisan key:generate
-docker exec -it laravel_app php artisan migrate
+docker exec -it laravel_app php artisan migrate --seed
 ```
 
 ---
