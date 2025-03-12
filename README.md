@@ -1,5 +1,3 @@
-Albatta! Quyidagicha `README.md` faylingiz uchun chiroyli, toza va tushunarli shaklda yozib beraman:  
-
 ---
 
 ```markdown
@@ -64,8 +62,6 @@ docker-compose restart
 
 ✅ Endi sizning Laravel loyihangiz Docker orqali ishga tushdi va ishlashga tayyor!
 ```
-
----
 
 Agar `laravel_app` konteyner nomi boshqa bo‘lsa (masalan `app` yoki `web`), uni ham o‘zgartirib berishim mumkin. Yana yordam kerakmi?
 
